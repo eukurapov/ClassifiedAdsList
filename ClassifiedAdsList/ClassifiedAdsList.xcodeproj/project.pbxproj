@@ -24,6 +24,8 @@
 		E32091FC2A865D6D00DF520A /* ImageRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091FB2A865D6D00DF520A /* ImageRepositoryProtocol.swift */; };
 		E32091FE2A865DCF00DF520A /* ClassifiedsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091FD2A865DCF00DF520A /* ClassifiedsRepositoryProtocol.swift */; };
 		E32092002A865E0A00DF520A /* CategoriesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091FF2A865E0A00DF520A /* CategoriesRepositoryProtocol.swift */; };
+		E32092042A865FA300DF520A /* ClassifiedDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32092032A865FA300DF520A /* ClassifiedDTO.swift */; };
+		E32092062A8662A400DF520A /* CategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32092052A8662A400DF520A /* CategoryDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		E32091FB2A865D6D00DF520A /* ImageRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepositoryProtocol.swift; sourceTree = "<group>"; };
 		E32091FD2A865DCF00DF520A /* ClassifiedsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedsRepositoryProtocol.swift; sourceTree = "<group>"; };
 		E32091FF2A865E0A00DF520A /* CategoriesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E32092032A865FA300DF520A /* ClassifiedDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedDTO.swift; sourceTree = "<group>"; };
+		E32092052A8662A400DF520A /* CategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		E32091B72A863C7000DF520A /* ClassifiedAdsList */ = {
 			isa = PBXGroup;
 			children = (
+				E32092012A865F8B00DF520A /* Data */,
 				E32091F22A86555400DF520A /* Domain */,
 				E32091B82A863C7000DF520A /* AppDelegate.swift */,
 				E32091E92A86434400DF520A /* AppCoordinator.swift */,
@@ -189,6 +194,23 @@
 				E32091FF2A865E0A00DF520A /* CategoriesRepositoryProtocol.swift */,
 			);
 			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		E32092012A865F8B00DF520A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E32092022A865F9600DF520A /* DTO */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E32092022A865F9600DF520A /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				E32092032A865FA300DF520A /* ClassifiedDTO.swift */,
+				E32092052A8662A400DF520A /* CategoryDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +346,11 @@
 				E32091EA2A86434400DF520A /* AppCoordinator.swift in Sources */,
 				E32091F72A8655AF00DF520A /* GetClassifiedsUseCase.swift in Sources */,
 				E32091F52A8655A000DF520A /* GetImageUseCase.swift in Sources */,
+				E32092062A8662A400DF520A /* CategoryDTO.swift in Sources */,
 				E32091F12A8653FF00DF520A /* Category.swift in Sources */,
 				E32091F92A8655C100DF520A /* GetCategoriesUseCase.swift in Sources */,
 				E32091BD2A863C7000DF520A /* ViewController.swift in Sources */,
+				E32092042A865FA300DF520A /* ClassifiedDTO.swift in Sources */,
 				E32092002A865E0A00DF520A /* CategoriesRepositoryProtocol.swift in Sources */,
 				E32091ED2A864FCC00DF520A /* Classified.swift in Sources */,
 				E32091EF2A86520900DF520A /* ClassifiedImage.swift in Sources */,
