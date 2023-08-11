@@ -15,6 +15,9 @@
 		E32091DA2A863C7200DF520A /* ClassifiedAdsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091D92A863C7200DF520A /* ClassifiedAdsListUITests.swift */; };
 		E32091DC2A863C7200DF520A /* ClassifiedAdsListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091DB2A863C7200DF520A /* ClassifiedAdsListUITestsLaunchTests.swift */; };
 		E32091EA2A86434400DF520A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091E92A86434400DF520A /* AppCoordinator.swift */; };
+		E32091ED2A864FCC00DF520A /* Classified.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091EC2A864FCC00DF520A /* Classified.swift */; };
+		E32091EF2A86520900DF520A /* ClassifiedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091EE2A86520900DF520A /* ClassifiedImage.swift */; };
+		E32091F12A8653FF00DF520A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091F02A8653FF00DF520A /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E32091D92A863C7200DF520A /* ClassifiedAdsListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdsListUITests.swift; sourceTree = "<group>"; };
 		E32091DB2A863C7200DF520A /* ClassifiedAdsListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdsListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E32091E92A86434400DF520A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E32091EC2A864FCC00DF520A /* Classified.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classified.swift; sourceTree = "<group>"; };
+		E32091EE2A86520900DF520A /* ClassifiedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedImage.swift; sourceTree = "<group>"; };
+		E32091F02A8653FF00DF520A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		E32091B72A863C7000DF520A /* ClassifiedAdsList */ = {
 			isa = PBXGroup;
 			children = (
+				E32091F22A86555400DF520A /* Domain */,
 				E32091B82A863C7000DF520A /* AppDelegate.swift */,
 				E32091E92A86434400DF520A /* AppCoordinator.swift */,
 				E32091BC2A863C7000DF520A /* ViewController.swift */,
@@ -130,6 +137,24 @@
 				E32091C62A863C7200DF520A /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E32091EB2A864F8E00DF520A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E32091EC2A864FCC00DF520A /* Classified.swift */,
+				E32091EE2A86520900DF520A /* ClassifiedImage.swift */,
+				E32091F02A8653FF00DF520A /* Category.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E32091F22A86555400DF520A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E32091EB2A864F8E00DF520A /* Entities */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E32091EA2A86434400DF520A /* AppCoordinator.swift in Sources */,
+				E32091F12A8653FF00DF520A /* Category.swift in Sources */,
 				E32091BD2A863C7000DF520A /* ViewController.swift in Sources */,
+				E32091ED2A864FCC00DF520A /* Classified.swift in Sources */,
+				E32091EF2A86520900DF520A /* ClassifiedImage.swift in Sources */,
 				E32091B92A863C7000DF520A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
