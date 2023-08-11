@@ -14,6 +14,7 @@
 		E32091D02A863C7200DF520A /* ClassifiedAdsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091CF2A863C7200DF520A /* ClassifiedAdsListTests.swift */; };
 		E32091DA2A863C7200DF520A /* ClassifiedAdsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091D92A863C7200DF520A /* ClassifiedAdsListUITests.swift */; };
 		E32091DC2A863C7200DF520A /* ClassifiedAdsListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091DB2A863C7200DF520A /* ClassifiedAdsListUITestsLaunchTests.swift */; };
+		E32091EA2A86434400DF520A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091E92A86434400DF520A /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		E32091D52A863C7200DF520A /* ClassifiedAdsListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassifiedAdsListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32091D92A863C7200DF520A /* ClassifiedAdsListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdsListUITests.swift; sourceTree = "<group>"; };
 		E32091DB2A863C7200DF520A /* ClassifiedAdsListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdsListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E32091E92A86434400DF520A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				E32091B82A863C7000DF520A /* AppDelegate.swift */,
+				E32091E92A86434400DF520A /* AppCoordinator.swift */,
 				E32091BC2A863C7000DF520A /* ViewController.swift */,
 				E32091E82A86412300DF520A /* Resources */,
 			);
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32091EA2A86434400DF520A /* AppCoordinator.swift in Sources */,
 				E32091BD2A863C7000DF520A /* ViewController.swift in Sources */,
 				E32091B92A863C7000DF520A /* AppDelegate.swift in Sources */,
 			);
