@@ -9,7 +9,7 @@ import Foundation
 
 struct Classified {
     let id: Int
-    let categoryId: Int
+    let category: ClassifiedCategory
     let title: String
     let description: String
     let price: Double
