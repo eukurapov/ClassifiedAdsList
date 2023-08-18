@@ -21,10 +21,14 @@ final class ClassifiedsRepository: ClassifiedsRepositoryProtocol {
     }
 
     func getClassifieds() async throws -> [Classified] {
-        let classifiedDTOs = try await classifiedsAPIService.getClassifieds()
-        let categoryDTOs = try await categoriesAPIService.getCategories()
+        async let classifiedDTOs = classifiedsAPIService.getClassifieds()
+        async let categoryDTOs = categoriesAPIService.getCategories()
 
-        return classifiedDTOs.compactMap { classifiedDTO in
+        return try await classifieds(from: classifiedDTOs, categoryDTOs: categoryDTOs)
+    }
+
+    private func classifieds(from dtos: [ClassifiedDTO], categoryDTOs: [CategoryDTO]) -> [Classified] {
+        return dtos.compactMap { classifiedDTO in
             let categoryDTO = categoryDTOs.first { $0.id == classifiedDTO.categoryId }
             guard let categoryDTO else { return nil }
 

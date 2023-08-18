@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CategoryDTO {
+struct CategoryDTO: Decodable {
     let id: Int
     let name: String
 }

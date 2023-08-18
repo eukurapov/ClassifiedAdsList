@@ -36,6 +36,12 @@
 		E3EFB41B2A8F9F0F006E830F /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB41A2A8F9F0F006E830F /* ImageRepository.swift */; };
 		E3EFB41D2A8F9F69006E830F /* ImageAPIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB41C2A8F9F69006E830F /* ImageAPIServiceProtocol.swift */; };
 		E3EFB41F2A8FA045006E830F /* ImageCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB41E2A8FA045006E830F /* ImageCacheProtocol.swift */; };
+		E3EFB4252A8FA37B006E830F /* CategoriesAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB4242A8FA37B006E830F /* CategoriesAPIService.swift */; };
+		E3EFB4272A8FA41D006E830F /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB4262A8FA41D006E830F /* NetworkServiceProtocol.swift */; };
+		E3EFB4292A8FA49D006E830F /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB4282A8FA49D006E830F /* DataError.swift */; };
+		E3EFB42B2A8FA5C9006E830F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB42A2A8FA5C9006E830F /* NetworkService.swift */; };
+		E3EFB42D2A8FA732006E830F /* ClassifiedsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB42C2A8FA732006E830F /* ClassifiedsAPIService.swift */; };
+		E3EFB42F2A8FE3E6006E830F /* ImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFB42E2A8FE3E6006E830F /* ImageAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,12 @@
 		E3EFB41A2A8F9F0F006E830F /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		E3EFB41C2A8F9F69006E830F /* ImageAPIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIServiceProtocol.swift; sourceTree = "<group>"; };
 		E3EFB41E2A8FA045006E830F /* ImageCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheProtocol.swift; sourceTree = "<group>"; };
+		E3EFB4242A8FA37B006E830F /* CategoriesAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesAPIService.swift; sourceTree = "<group>"; };
+		E3EFB4262A8FA41D006E830F /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		E3EFB4282A8FA49D006E830F /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		E3EFB42A2A8FA5C9006E830F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E3EFB42C2A8FA732006E830F /* ClassifiedsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedsAPIService.swift; sourceTree = "<group>"; };
+		E3EFB42E2A8FE3E6006E830F /* ImageAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,9 +231,12 @@
 		E32092012A865F8B00DF520A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E3EFB4232A8FA2AA006E830F /* APIServices */,
+				E3EFB4202A8FA297006E830F /* Network */,
 				E3EFB40D2A8F8626006E830F /* Protocols */,
 				E3EFB40A2A8F7DCC006E830F /* Repositories */,
 				E32092022A865F9600DF520A /* DTO */,
+				E3EFB4282A8FA49D006E830F /* DataError.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -263,8 +278,27 @@
 				E3EFB4112A8F8746006E830F /* ClassifiedsAPIServiceProtocol.swift */,
 				E3EFB41C2A8F9F69006E830F /* ImageAPIServiceProtocol.swift */,
 				E3EFB41E2A8FA045006E830F /* ImageCacheProtocol.swift */,
+				E3EFB4262A8FA41D006E830F /* NetworkServiceProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E3EFB4202A8FA297006E830F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E3EFB42A2A8FA5C9006E830F /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E3EFB4232A8FA2AA006E830F /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				E3EFB4242A8FA37B006E830F /* CategoriesAPIService.swift */,
+				E3EFB42C2A8FA732006E830F /* ClassifiedsAPIService.swift */,
+				E3EFB42E2A8FE3E6006E830F /* ImageAPIService.swift */,
+			);
+			path = APIServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,9 +442,12 @@
 				E3EFB4142A8F8908006E830F /* ClassifiedsRepository.swift in Sources */,
 				E32091F12A8653FF00DF520A /* Category.swift in Sources */,
 				E32091F92A8655C100DF520A /* GetCategoriesUseCase.swift in Sources */,
+				E3EFB42D2A8FA732006E830F /* ClassifiedsAPIService.swift in Sources */,
 				E32091BD2A863C7000DF520A /* ViewController.swift in Sources */,
 				E3EFB4182A8F93AE006E830F /* ClassifiedCategory+DTO.swift in Sources */,
+				E3EFB42B2A8FA5C9006E830F /* NetworkService.swift in Sources */,
 				E32092042A865FA300DF520A /* ClassifiedDTO.swift in Sources */,
+				E3EFB4272A8FA41D006E830F /* NetworkServiceProtocol.swift in Sources */,
 				E32092002A865E0A00DF520A /* CategoriesRepositoryProtocol.swift in Sources */,
 				E3EFB41B2A8F9F0F006E830F /* ImageRepository.swift in Sources */,
 				E32091ED2A864FCC00DF520A /* Classified.swift in Sources */,
@@ -419,6 +456,9 @@
 				E32091B92A863C7000DF520A /* AppDelegate.swift in Sources */,
 				E3EFB4162A8F9048006E830F /* Classified+DTO.swift in Sources */,
 				E32091FC2A865D6D00DF520A /* ImageRepositoryProtocol.swift in Sources */,
+				E3EFB42F2A8FE3E6006E830F /* ImageAPIService.swift in Sources */,
+				E3EFB4252A8FA37B006E830F /* CategoriesAPIService.swift in Sources */,
+				E3EFB4292A8FA49D006E830F /* DataError.swift in Sources */,
 				E32091FE2A865DCF00DF520A /* ClassifiedsRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

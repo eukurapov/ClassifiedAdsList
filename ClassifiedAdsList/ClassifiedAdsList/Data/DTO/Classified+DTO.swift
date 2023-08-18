@@ -11,7 +11,7 @@ extension Classified {
 
     private static var dateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         return formatter
     }()
 
@@ -29,8 +29,8 @@ extension Classified {
             creationDate: creationDate,
             isUrgent: dto.isUrgent,
             images: .init(
-                smallUrl: dto.imagesUrl.small,
-                thumbUrl: dto.imagesUrl.thumb
+                smallUrl: dto.imagesUrl.small ?? "",
+                thumbUrl: dto.imagesUrl.thumb ?? ""
             )
         )
     }
