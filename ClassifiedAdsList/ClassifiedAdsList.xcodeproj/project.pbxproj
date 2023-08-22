@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E32091B92A863C7000DF520A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091B82A863C7000DF520A /* AppDelegate.swift */; };
-		E32091BD2A863C7000DF520A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091BC2A863C7000DF520A /* ViewController.swift */; };
 		E32091C22A863C7200DF520A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32091C12A863C7200DF520A /* Assets.xcassets */; };
 		E32091C52A863C7200DF520A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32091C32A863C7200DF520A /* LaunchScreen.storyboard */; };
 		E32091DA2A863C7200DF520A /* ClassifiedAdsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32091D92A863C7200DF520A /* ClassifiedAdsListUITests.swift */; };
@@ -69,7 +68,6 @@
 /* Begin PBXFileReference section */
 		E32091B52A863C7000DF520A /* ClassifiedAdsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassifiedAdsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32091B82A863C7000DF520A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E32091BC2A863C7000DF520A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E32091C12A863C7200DF520A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32091C42A863C7200DF520A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E32091C62A863C7200DF520A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 				E32091F22A86555400DF520A /* Domain */,
 				E32091B82A863C7000DF520A /* AppDelegate.swift */,
 				E32091E92A86434400DF520A /* AppCoordinator.swift */,
-				E32091BC2A863C7000DF520A /* ViewController.swift */,
 				E32091E82A86412300DF520A /* Resources */,
 			);
 			path = ClassifiedAdsList;
@@ -484,7 +481,6 @@
 				E32091F12A8653FF00DF520A /* Category.swift in Sources */,
 				E32091F92A8655C100DF520A /* GetCategoriesUseCase.swift in Sources */,
 				E3EFB42D2A8FA732006E830F /* ClassifiedsAPIService.swift in Sources */,
-				E32091BD2A863C7000DF520A /* ViewController.swift in Sources */,
 				E3EFB43A2A94AC20006E830F /* DetailsViewController.swift in Sources */,
 				E3EFB4182A8F93AE006E830F /* ClassifiedCategory+DTO.swift in Sources */,
 				E3EFB42B2A8FA5C9006E830F /* NetworkService.swift in Sources */,
