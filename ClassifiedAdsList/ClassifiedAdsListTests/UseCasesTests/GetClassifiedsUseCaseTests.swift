@@ -14,13 +14,14 @@ final class GetClassifiedsUseCaseTests: XCTestCase {
 
     func testSuccessReturnValue() async throws {
         repository.getClassifiedsCallHandler = {
-            return [Classified.testValue()]
+            return Classified.testValues()
         }
         let useCase = GetClassifiedsUseCase(classifiedsRepository: repository)
         let classifieds = try await useCase.execute()
 
         XCTAssertEqual(repository.getClassifiedsCallsCount, 1)
-        XCTAssertEqual(classifieds.count, 1)
+        XCTAssertEqual(classifieds.count, 4)
+        XCTAssertEqual(classifieds.map(\.id), [1,2,3,4])
     }
 }
 
@@ -36,16 +37,48 @@ private class ClassifiedsRepositoryProtocolMock: ClassifiedsRepositoryProtocol {
 }
 
 private extension Classified {
-    static func testValue() -> Classified {
-        return .init(
-            id: 1,
-            categoryId: 1,
-            title: "Test",
-            description: "Test Description",
-            price: 100.00,
-            creationDate: Date(),
-            isUrgent: false,
-            images: .init(smallUrl: "", thumbUrl: "")
-        )
+    static func testValues() -> [Classified] {
+        return [
+            .init(
+                id: 4,
+                category: ClassifiedCategory(id: 1, name: "test category"),
+                title: "Test",
+                description: "Test Description",
+                price: 100.00,
+                creationDate: Date()-1,
+                isUrgent: false,
+                images: .init(smallUrl: "", thumbUrl: "")
+            ),
+            .init(
+                id: 2,
+                category: ClassifiedCategory(id: 1, name: "test category"),
+                title: "Test",
+                description: "Test Description",
+                price: 100.00,
+                creationDate: Date()-1,
+                isUrgent: true,
+                images: .init(smallUrl: "", thumbUrl: "")
+            ),
+            .init(
+                id: 1,
+                category: ClassifiedCategory(id: 1, name: "test category"),
+                title: "Test",
+                description: "Test Description",
+                price: 100.00,
+                creationDate: Date(),
+                isUrgent: true,
+                images: .init(smallUrl: "", thumbUrl: "")
+            ),
+            .init(
+                id: 3,
+                category: ClassifiedCategory(id: 1, name: "test category"),
+                title: "Test",
+                description: "Test Description",
+                price: 100.00,
+                creationDate: Date(),
+                isUrgent: false,
+                images: .init(smallUrl: "", thumbUrl: "")
+            )
+        ]
     }
 }
