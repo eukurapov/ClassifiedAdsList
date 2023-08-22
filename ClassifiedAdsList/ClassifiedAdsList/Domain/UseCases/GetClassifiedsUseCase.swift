@@ -20,6 +20,13 @@ final class GetClassifiedsUseCase: GetClassifiedsUseCaseProtocol {
     }
 
     func execute() async throws -> [Classified] {
-        return try await classifiedsRepository.getClassifieds()
+        let classifieds = try await classifiedsRepository.getClassifieds()
+        return classifieds.sorted { lhs, rhs in
+            switch (lhs.isUrgent, rhs.isUrgent) {
+            case (true, true), (false, false): return lhs.creationDate > rhs.creationDate
+            case (true, false): return true
+            case (false, true): return false
+            }
+        }
     }
 }
